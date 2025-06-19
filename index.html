@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Komal Patankar - Portfolio</title>
+</head>
+<body>
+    <header>
+        <a href="#home" class="logo">Komal</a>
+        <nav id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+  <section class="home" id="home">
+  <div class="home-content">
+    <h1>Hi, I'm <span class="gradient-text">Komal</span></h1>
+    <h3 class="typing-text">I'm a <span></span></h3>
+    <p>
+      Passionate about blending <strong>AI</strong> and <strong>design</strong>, I create smart, user-centric solutions that make learning interactive and personalized. From intuitive interfaces to intelligent systems, I craft digital experiences that not only work beautifully—but think smartly too.
+    </p>
+
+    <div class="social-icons">
+      <a href="https://www.linkedin.com/in/komal-patankar-64017625b/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/Komalpatankar" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="mailto:komalpatankar14@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.instagram.com/komalpatankar/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+
+    <a href="#contact" class="btn">Hire Me</a>
+
+    <!-- Resume Dropdown -->
+    <div class="resume-dropdown">
+      <select onchange="downloadSelectedResume(this)">
+        <option disabled selected>📄 Select Resume to Download</option>
+        <option value="komal patankar product design resume.pdf">ui-ux designer Resume</option>
+        <option value="Komal Patankar VIIT Datasci.pdf">Data Science Resume</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="home-img">
+    <img src="komal profile.jpg" alt="Komal Patankar">
+  </div>
+</section>
+
+  <h2 class="section-title">Skills And Technologies</h2>
+  
+    
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4><i class="fas fa-palette"></i> Design</h4>
+                    <p>Figma, Canva, UI/UX Design, Prototyping, Wireframing, Design Systems, Responsive Design</p>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-chart-line"></i> Data Science</h4>
+                    <p>Python, Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, TensorFlow, Machine Learning, Deep Learning</p>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-code"></i> Development</h4>
+                    <p>HTML, CSS, JavaScript, React, Bootstrap, Tailwind CSS, MongoDB, SQL</p>
+                </div>
+                <div class="skill-category">
+                    <h4><i class="fas fa-brain"></i> AI/ML</h4>
+                    <p>Generative AI, RAG, NLP, Prompt Engineering, Computer Vision, CNN, Deep Learning</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Quizzical: AI Quiz Generator</h3>
+                <p>Quizzical is an AI-driven adaptive quiz generator built with Figma, React.js, Tailwind CSS, Gemini API, and MongoDB. It generates quizzes from documents or prompts using AI and vector database integration, with adaptive difficulty based on user performance. Key features include real-time keyword-based quiz generation, quiz editing, multi-user collaboration, and Google Forms integration for sharing and email notifications. I led the UI/UX design, focusing on responsive, intuitive user experiences that support personalized learning.
+
+</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">React.js</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">Gemini API</span>
+                    <span class="tech-tag">Vector DB</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>INSUREIQ: LIC Chatbot</h3>
+                <p> INSUREIQ, a multilingual chatbot for LIC policy support. I built the full system using a RAG pipeline with LangChain, FAISS, and Google Gemini LLMs. The chatbot retrieves relevant LIC document chunks and generates accurate, cited responses in English and Hindi. I also developed a user-friendly interface using Streamlit. This project helped me apply NLP, vector search, and LLMs to solve a real-world problem with a focus on accessibility and factual accuracy.
+
+</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">LangChain</span>
+                    <span class="tech-tag">FAISS</span>
+                    <span class="tech-tag">Gemini API</span>
+                    <span class="tech-tag">Streamlit</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="https://github.com/Komalpatankar/INSUREIQ-A_RAG_Based_Multilingual_Assistance_For_LIC_Services" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Tomato Disease Detection</h3>
+                <p>AI-powered plant disease detection system using CNN, AlexNet, and InceptionV3. Achieved 99.21% accuracy with integrated fertilizer recommendations.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">TensorFlow</span>
+                    <span class="tech-tag">CNN</span>
+                    <span class="tech-tag">Computer Vision</span>
+                    <span class="tech-tag">Deep Learning</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Project</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Flyora Tours - Travel Website</h3>
+                <p>Comprehensive travel website design with 10 structured pages including booking flow, payment screens, and destination listings. Modern aesthetic with intuitive user journey.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">UI/UX Design</span>
+                    <span class="tech-tag">Prototyping</span>
+                    <span class="tech-tag">Wireframing</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Design</a>
+                    <a href="#" target="_blank">Prototype</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Smart-Learn E-Learning Platform</h3>
+                <p>User-friendly e-learning platform with interactive lessons, structured course catalogs, and responsive design. Features user authentication and instructor applications.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Bootstrap</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">Live Demo</a>
+                    <a href="#" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <h3>Project Management UI/UX</h3>
+                <p>Clean, user-friendly project management web app design with interactive prototypes featuring task boards, timelines, and team dashboards.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">UI/UX Design</span>
+                    <span class="tech-tag">Responsive Design</span>
+                    <span class="tech-tag">Accessibility</span>
+                </div>
+                <div class="project-links">
+                    <a href="#" target="_blank">View Design</a>
+                    <a href="#" target="_blank">Prototype</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Let's Work Together</h3>
+                <p>I'm always excited to work on new projects and collaborate with amazing people. Whether you need a designer, developer, or data scientist, I'd love to hear from you!</p>
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>komalpatankar14@gmail.com</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 8087705940</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Pune, Maharashtra, India</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <span>linkedin.com/in/komal-patankar</span>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Komal Patankar. All rights reserved. Designed with ❤️</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
